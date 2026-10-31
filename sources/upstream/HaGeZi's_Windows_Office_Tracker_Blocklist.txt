@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.1.10
+! Version: 1.0.1.35
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-06-07T19:36:24.976Z
+! Last modified: 2026-10-10T00:53:08.820Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -18,7 +18,6 @@
 ||js0.tst.applicationinsights.io^
 ||js1.tst.applicationinsights.io^
 ||js2.tst.applicationinsights.io^
-||api.applicationinsights.azure.cn^
 ||dc.applicationinsights.azure.cn^
 ||dc.applicationinsights.azure.us^
 ||in.applicationinsights.azure.cn^
@@ -45,18 +44,13 @@
 ||g.bing.com^
 ||raka.bing.com^
 ||c.bingapis.com^
-||upload.fp.measure.office.com.corp.mmco.int.cardano.com^
-||exo.nel.measure.office.net.cardano.com^
-||identity.nel.measure.office.net.cardano.com^
-||m365cdn.nel.measure.office.net.cardano.com^
-||spo.nel.measure.office.net.cardano.com^
-||teams.nel.measure.office.net.cardano.com^
-||insights.cloud.microsoft^
 ||measure.office.net.edgesuite.net^
+||westeurope-5.in.applicationinsights.azure.com.fiege.de^
 ||collector.azure.eaglex.ic.gov^
 ||auc-visio-telemetry.officeapps.live.com^
 ||brc-visio-telemetry.officeapps.live.com^
 ||cac-visio-telemetry.officeapps.live.com^
+||chc-visio-telemetry.officeapps.live.com^
 ||dec-visio-telemetry.officeapps.live.com^
 ||euc-excel-telemetry.officeapps.live.com^
 ||euc-onenote-telemetry.officeapps.live.com^
@@ -70,6 +64,7 @@
 ||excel-telemetry.officeapps.live.com^
 ||ffc-excel-telemetry.officeapps.live.com^
 ||ffc-word-telemetry.officeapps.live.com^
+||fgteu1-word-telemetry-vip.officeapps.live.com^
 ||frc-visio-telemetry.officeapps.live.com^
 ||inc-visio-telemetry.officeapps.live.com^
 ||nexus.officeapps.live.com^
@@ -99,12 +94,8 @@
 ||pgteu5-excel-telemetry-vip.officeapps.live.com^
 ||pgteu5-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgteu5-word-telemetry-vip.officeapps.live.com^
-||pgtmx1-excel-telemetry-vip.officeapps.live.com^
 ||pgtmx1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtmx1-word-telemetry-vip.officeapps.live.com^
-||pgtsg1-excel-telemetry-vip.officeapps.live.com^
-||pgtsg1-powerpoint-telemetry-vip.officeapps.live.com^
-||pgtsg1-word-telemetry-vip.officeapps.live.com^
 ||pgtus1-excel-telemetry-vip.officeapps.live.com^
 ||pgtus1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtus1-word-telemetry-vip.officeapps.live.com^
@@ -131,7 +122,6 @@
 ||sgtus1-excel-telemetry-vip.officeapps.live.com^
 ||sgtus1-powerpoint-telemetry-vip.officeapps.live.com^
 ||sgtus1-word-telemetry-vip.officeapps.live.com^
-||telemetry.officeapps.live.com^
 ||tgtus1-excel-telemetry-vip.officeapps.live.com^
 ||tgtus1-powerpoint-telemetry-vip.officeapps.live.com^
 ||tgtus1-word-telemetry-vip.officeapps.live.com^
@@ -149,9 +139,9 @@
 ||rad.live.com^
 ||ssw.live.com^
 ||watson.live.com^
+||logs.appsource.microsoft.com^
 ||pipe.aria.microsoft.com^
 ||collector.azure.microsoft.cloud^
-||collector.azure.microsoft.scloud^
 ||track.notif.careersppe.microsoft.com^
 ||events.data.microsoft.com^
 ||events-sandbox.data.microsoft.com^
@@ -162,7 +152,9 @@
 ||api.edgeoffer.microsoft.com^
 ||redir.metaservices.microsoft.com^
 ||track.mp.microsoft.com^
+||inputsuggestions.msdxcdn.microsoft.com^
 ||watson.officeint.microsoft.com^
+||feedback.search.microsoft.com^
 ||telem-edge.smartscreen.microsoft.com^
 ||i1.services.social.microsoft.com^
 ||telemetry.urs.microsoft.com^
@@ -181,12 +173,13 @@
 ||clarity.microsoft.com^
 ||ieonline.microsoft.com^
 ||location.microsoft.com^
+||measure.microsoft.com^
 ||msadsscale.microsoft.com^
 ||oca.microsoft.com^
 ||rad.microsoft.com^
+||romeccs.microsoft.com^
 ||spynet2.microsoft.com^
 ||spynetalt.microsoft.com^
-||tar.microsoft.com^
 ||telecommandsvc.microsoft.com^
 ||telemetry.microsoft.com^
 ||telemetry.microsoft.us^
@@ -218,6 +211,7 @@
 ||t-ring-s2.msedge.net^
 ||t-ring-trafficshield.msedge.net^
 ||t-s1-ring.msedge.net^
+||t-s2-ring.msedge.net^
 ||win10-trt.msedge.net^
 ||metric.appex-rf.msn.com^
 ||c.ar.msn.com^
@@ -274,7 +268,6 @@
 ||arc1.msn.com^
 ||arc2.msn.com^
 ||arc3.msn.com^
-||arc5.msn.com^
 ||arc9.msn.com^
 ||confiant.msn.com^
 ||flex.msn.com^
@@ -300,8 +293,6 @@
 ||measure.office.com^
 ||measure.office.net^
 ||prod.editor.ads.trafficmanager.net^
-||azure.bcp.bingads.trafficmanager.net^
-||azure.tip.bingads.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^
 ||events.data.trafficmanager.net^
 ||vortex.data.trafficmanager.net^
@@ -310,18 +301,22 @@
 ||euc-excel-telemetry.wac.trafficmanager.net^
 ||euc-powerpoint-telemetry.wac.trafficmanager.net^
 ||euc-word-telemetry.wac.trafficmanager.net^
+||eurffc-word-telemetry.wac.trafficmanager.net^
 ||excel-telemetry.wac.trafficmanager.net^
 ||powerpoint-telemetry.wac.trafficmanager.net^
 ||ppc-excel-telemetry.wac.trafficmanager.net^
 ||ppc-powerpoint-telemetry.wac.trafficmanager.net^
 ||ppc-word-telemetry.wac.trafficmanager.net^
 ||word-telemetry.wac.trafficmanager.net^
+||ads-msn-com-profile.trafficmanager.net^
 ||adsdk.trafficmanager.net^
 ||agps-location-livenet.trafficmanager.net^
 ||analytics.trafficmanager.net^
 ||analytics-listener.trafficmanager.net^
 ||beacons.trafficmanager.net^
+||bingads.trafficmanager.net^
 ||ch-asimov-leafs-events-data.trafficmanager.net^
+||collection-location-livenet.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||dsp-ad-cache-tm.trafficmanager.net^
 ||eventservice.trafficmanager.net^
@@ -333,24 +328,23 @@
 ||irreverselookuptm.trafficmanager.net^
 ||ism-telemetry.trafficmanager.net^
 ||legacywatson.trafficmanager.net^
-||o365diagtelemetry.trafficmanager.net^
 ||office-events-data.trafficmanager.net^
 ||oms-analytics.trafficmanager.net^
+||partnerfraudevents.trafficmanager.net^
 ||pixel-sync.trafficmanager.net^
 ||self-events-data.trafficmanager.net^
 ||ssp-prod-eastus-nonmutt.trafficmanager.net^
 ||stats-partner.trafficmanager.net^
 ||teams-events-data.trafficmanager.net^
 ||telemetry-lcp.trafficmanager.net^
-||tenmax-ads.trafficmanager.net^
 ||tm-analytics-pr.trafficmanager.net^
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
 ||us-mesh-events-data-leafs.trafficmanager.net^
 ||vstelemetry.trafficmanager.net^
-||we-events-prod-1.trafficmanager.net^
 ||win-global-asimov-leafs-events-data.trafficmanager.net^
+||wttwebsiteprodapi-liveevents.trafficmanager.net^
 ||dc.services.visualstudio.com^
-||h4g3z1-native.winoffice.web.app^
+||h4g3z1-native-winoffice.web.app^
 ||ceuswatcab01.blob.core.windows.net^
 ||ceuswatcab02.blob.core.windows.net^
 ||eaus2watcab01.blob.core.windows.net^
@@ -375,12 +369,13 @@
 ||citrixtelemetryeheu.servicebus.windows.net^
 ||citrixtelemetryeheu-alias.servicebus.windows.net^
 ||ehtelemetrystaging-alias.servicebus.windows.net^
-||ffg-analyticsk3nvxfne4dp4s.servicebus.windows.net^
 ||hme-live-loganalytics-namespace.servicebus.windows.net^
 ||hme-uat-loganalytics-namespace.servicebus.windows.net^
+||kg-legacy-analytics.servicebus.windows.net^
 ||licensingtelemetry-prod.servicebus.windows.net^
 ||nexxtv-events.servicebus.windows.net^
 ||ppm-licensingtelemetry.servicebus.windows.net^
+||prd-qlik-telemetry.servicebus.windows.net^
 ||prod-eh-v1-analytics.servicebus.windows.net^
 ||prod-eventhub-analytics.servicebus.windows.net^
 ||production-jobactivity-analytics.servicebus.windows.net^
