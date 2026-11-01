@@ -1,9 +1,9 @@
 !
 ! Title: Malicious URL Blocklist (URLHaus)
 ! Description: Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus
-! Version: 1.0.29.97
+! Version: 1.0.29.99
 ! Homepage: https://urlhaus.abuse.ch/
-! Last modified: 2026-10-31T01:11:25.583Z
+! Last modified: 2026-11-01T00:36:30.585Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -17,6 +17,7 @@
 ||10.185.202.64.host.secureserver.net^
 ||123.ywxww.net^
 ||132.red-81-42-249.staticip.rima-tde.net^
+||150.co.il^
 ||1717.1000uc.com^
 ||172-104-49-49.ip.linodeusercontent.com^
 ||176.65.148.145.ptr.pfcloud.network^
@@ -36,6 +37,7 @@
 ||2goelectricity.co.za^
 ||2homebrews.com^
 ||3.zhzy999.net3.zhzy999.net^
+||3.zhzy999.net^
 ||31.128.173.853.zhzy999.net31.128.173.853.zhzy999.net^
 ||31.shaderzone.org^
 ||33841-28554.dchost.com^
@@ -56,7 +58,6 @@
 ||87130921-60-20220830152356.webstarterz.com^
 ||93-152-221-234.plesk.page^
 ||93.105.205.92.host.secureserver.net^
-||99-118-215-24.lightspeed.irvnca.sbcglobal.net^
 ||99194034-96-20180108171507.webstarterz.com^
 ||999.34c9f78b4ef541baac4a6e84d4f832a7.lol^
 ||9d0be5e43042be826d3e5e2a880a311d.r2.cloudflarestorage.com^
@@ -69,6 +70,7 @@
 ||acbcr.ro^
 ||acc.jiangsujiaxue.com^
 ||accessdocu.b-cdn.net^
+||accesstelematics.com^
 ||acms.saleseos.com^
 ||acrobat.proposal.name.ng^
 ||activatef.win^
@@ -163,7 +165,6 @@
 ||attach.66rpg.com^
 ||attach.mail.daum.net^
 ||attention-check.online^
-||audicontadores.com^
 ||auntieschaikhana.co.uk^
 ||aura.tcplegit.space^
 ||auravibes04ko.shop^
@@ -206,6 +207,7 @@
 ||bauble.cleverpondky.com^
 ||bb2c6-42dfkea8-9fhh47-927aebce12d4.fasterflogging.cc^
 ||beacon.ltdglobal.co.uk^
+||beak.in^
 ||beamtechmacros.com^
 ||becof.org^
 ||beinke-aufzuege.de^
@@ -218,9 +220,11 @@
 ||beschaffungszentrale.de^
 ||best.obs.cn-sz1.ctyun.cn^
 ||best10cdn.blob.core.windows.net^
+||bigs.bikershop.biz^
 ||billowing-lab-d15f.pentagon-e8b.workers.dev^
 ||bins.oceanic-node.su^
 ||bioprot.com.ar^
+||bipfdjnk.com^
 ||bismarckchiropractor.com^
 ||bitbrowse.oss-cn-hongkong.aliyuncs.com^
 ||bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com^
@@ -271,6 +275,7 @@
 ||bun-pullz.b-cdn.net^
 ||bundle.kpzip.com^
 ||bunnyview.b-cdn.net^
+||buruujtech.com^
 ||bvaco.com^
 ||bvmatqnam.com.vn^
 ||c--617b5f35-a107-4800-9047-a429934c0483-prod.lovable.cloud^
@@ -345,7 +350,6 @@
 ||churchinmanila.org^
 ||cianet.ir^
 ||cid.gov.so^
-||cim-kolea.com^
 ||citrusmangos.ct.ws^
 ||ck-bt.s3.us-east-2.amazonaws.com^
 ||cl.ssouy.com^
@@ -371,6 +375,7 @@
 ||cocuktekstil.com^
 ||cold5.gofile.io^
 ||colibrik.com^
+||community.firm.in^
 ||compuserviceonline.com.br^
 ||comumvidros.com.br^
 ||configprovider.short.gy^
@@ -386,7 +391,6 @@
 ||cosmical2049.com^
 ||counterscale.jean-r-mi-larcelet-prost.workers.dev^
 ||cpc188.day^
-||cpofficial.com^
 ||cqintzfep6rw6jc9.public.blob.vercel-storage.com^
 ||cqylt.net^
 ||crackedclients.com^
@@ -395,6 +399,7 @@
 ||crazypianoswebshop.nl^
 ||crazywickedaddiction.com^
 ||creativit.fr^
+||cresvin.com^
 ||croco.cx^
 ||crojam.com^
 ||crypter.gt.tc^
@@ -479,6 +484,7 @@
 ||db-connectify.vercel.app^
 ||db-connectors.vercel.app^
 ||db.foodbook.pk^
+||dc84406c-gei55kj16cf-d1fa3d9fc.fablegrid.cc^
 ||dcfpp.com^
 ||dcrun.co.uk^
 ||dcwblida.dz^
@@ -498,6 +504,7 @@
 ||deltabehavioralhealth.org^
 ||denizcerceve.com^
 ||dermaclinicmd.com^
+||dev.gestroom.it^
 ||dev7.devmicro7.workers.dev^
 ||devs.kantales.life^
 ||dezcom.com^
@@ -507,11 +514,11 @@
 ||dinamikakargo.com^
 ||dipre.com.tr^
 ||dir.sonikjp.org^
-||directdownloadl.ink^
 ||disk.accord1key.cn^
 ||divinex.to^
 ||dklak.cam^
 ||dl.1003b.56a.com^
+||dl.2345.com^
 ||dl.downloadonly.me^
 ||dl.dzqzd.com^
 ||dl.faster-cdn-hk.click^
@@ -556,6 +563,7 @@
 ||donutsmputilitys.netlify.app^
 ||down.fwqlt.com^
 ||down.pcclear.com^
+||down.qqfarmer.com.cn^
 ||down.ruanmei.com^
 ||down.unicron-cdn.click^
 ||down10d.zol.com.cn^
@@ -577,6 +585,7 @@
 ||download.ubua.online^
 ||download.vertex-software.digital^
 ||download.youlovemybiba.com^
+||download2.huduntech.com^
 ||downloader.exeexe.workers.dev^
 ||downloads.go-xlr.com^
 ||draft-loop.com^
@@ -586,11 +595,11 @@
 ||dreamwatchevent.com^
 ||drgenov.com^
 ||dropboxb3.duckdns.org^
+||dsfojsofsdofijdsofjisdofjisdofijsdfijsdiojsdo.com^
 ||dstats.qzz.io^
 ||dttjjkkllzbvesjzndtp.vercel.app^
 ||dubapkg.cmcmcdn.com^
 ||duct-master.com^
-||duelvalenza.it^
 ||dugovicova.sk^
 ||dulivo.vu^
 ||dulkir-mod.com^
@@ -603,11 +612,12 @@
 ||dxa.multidex.life^
 ||dy.dpwqwaapp.xyz^
 ||dynga.pl^
+||e76d78a-ab4760-db52-652cd4fy-u43jda.tidepull.cc^
 ||easyaround.st^
 ||easybillingsolutions.xyz^
+||easycryptos.org^
 ||eatcullt.com^
 ||eccmice.com^
-||eclipsebible.com^
 ||edisonmanotas.free.nf^
 ||effectively32.infinityfree.me^
 ||einzigartigfrei.de^
@@ -621,7 +631,6 @@
 ||elrneba.com^
 ||elxxvvx.xyz^
 ||embalageral.hospedagemdesites.ws^
-||embedone.com^
 ||emeraldstonegc.blog^
 ||emphasis-friday-even-administrator.trycloudflare.com^
 ||empty-violet-63e1.maskify.workers.dev^
@@ -682,8 +691,6 @@
 ||ficus.in^
 ||fil.immortales.life^
 ||file.blackint3.com^
-||file.tugou.com.co^
-||file.uhsea.com^
 ||fileget.plumbco.co.nz^
 ||filegoat.s3.de.io.cloud.ovh.net^
 ||filequanticore.com^
@@ -708,6 +715,7 @@
 ||flooriscoveringworld.com^
 ||floppaclient.com^
 ||floppaclient.org^
+||fluidfilm.bg^
 ||flyingmutts.com^
 ||fmrio.com^
 ||fnrh-v92w.mileyjimena72123.workers.dev^
@@ -735,8 +743,8 @@
 ||fussionmd.com^
 ||fuzerom.cfd^
 ||fz.tiansys.cn^
+||g6.wtf^
 ||gabyagozetim.com^
-||gaenterprises.in^
 ||gaiadeqi.com^
 ||galeri3.arkitera.com^
 ||galerisenimutiara.com^
@@ -810,7 +818,6 @@
 ||growgreenhorizons.com^
 ||grupocaprem.com^
 ||grupohenry1.com^
-||grupomcperu.com^
 ||gutando.com^
 ||haeum.nfile.net^
 ||hagosuro.lc^
@@ -840,6 +847,7 @@
 ||hjha.ao^
 ||hll912-1484535448.cos.ap-hongkong.myqcloud.com^
 ||hnjgdl.geps.glodon.com^
+||hobobot.net^
 ||horion-static.pages.dev^
 ||host-195-103-203-106.business.telecomitalia.it^
 ||host-95-230-215-65.business.telecomitalia.it^
@@ -863,6 +871,7 @@
 ||hzxcaq-github-io.pages.dev^
 ||ibidasjohnnraplc.com^
 ||icoffeecloud.com^
+||icomsa.com.mx^
 ||iconic-cracksds.vercel.app^
 ||idid.pl^
 ||idylliccreations.net^
@@ -904,7 +913,6 @@
 ||jam.cleverpondky.com^
 ||java.omsules.life^
 ||javb.omsules.life^
-||jawaratekno.com^
 ||jd-forever.com^
 ||jenniferloeffler.com^
 ||jessespridecharters.com^
@@ -980,7 +988,6 @@
 ||lehmann-autohaus.de^
 ||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^
 ||lenotecadiarqua.it^
-||letsgobok.com^
 ||letsupconfig.sbs^
 ||lifeisabouthavingfun448.duckdns.org^
 ||liikepalvelu.com^
@@ -1029,6 +1036,7 @@
 ||makemewin.club^
 ||malaysianpastrybakery.org^
 ||malupieng.com.br^
+||mamabearcoffee.com^
 ||manbipll.duckdns.org^
 ||mandarin.net.au^
 ||manita.lol^
@@ -1153,6 +1161,7 @@
 ||nonspamplsgood.vercel.app^
 ||nordertextil.de^
 ||nordmann-automobilgruppe.de^
+||northernvirginiaeyeassociates.com^
 ||nossl.segfault.net^
 ||nota-fical-online.lat^
 ||notbak.com^
@@ -1207,6 +1216,7 @@
 ||osbot.net^
 ||osmb.net^
 ||oss.cop.lat^
+||ossapp.suning.com^
 ||otkrytkadnya.ru^
 ||out-agent.duckdns.org^
 ||outexfashion.com^
@@ -1228,6 +1238,7 @@
 ||paste.mangsud.org^
 ||patricstoremegans2.com^
 ||paularavanelli.com.br^
+||pavetto.com^
 ||pawsockenjoyer.site^
 ||pay.aqiu6.com^
 ||paymentautomations.biz^
@@ -1239,6 +1250,7 @@
 ||pfatrivandrum.org^
 ||phantom-client.com^
 ||photolivebook.pro^
+||physicsbyfiziks.org^
 ||pic.li^
 ||pictureurl.com^
 ||pinewoodchristian.screenconnect.com^
@@ -1270,6 +1282,7 @@
 ||portal.onepansol.site^
 ||porterneuman.mx^
 ||porvootransitioncare.com^
+||pos.nittosupport.ca^
 ||posicionamientonatural.es^
 ||postelnini.mk^
 ||power-shell.cc^
@@ -1401,6 +1414,7 @@
 ||radium-client.org^
 ||raffcow4.beget.tech^
 ||ramirex.ro^
+||raqmnh.com^
 ||ray-id-v3.com^
 ||razao.pt^
 ||rcf.co.mz^
@@ -1422,7 +1436,6 @@
 ||reutilizemais.co.mz^
 ||revengegrompegroups.pl^
 ||rheddh.com^
-||riderspin.com^
 ||rigmod.net^
 ||rippled.cleverpondky.com^
 ||rmm.smartscreen.lifestyle^
@@ -1433,7 +1446,6 @@
 ||romeopirlanta.com^
 ||roptik.com^
 ||rosidlhassan.com^
-||rosirs-edu.com^
 ||rough-glade-bfc8.pentagon-e8b.workers.dev^
 ||rough-truth-e072.publicftpresend.workers.dev^
 ||round-breeze-3e9d.jay-e45.workers.dev^
@@ -1444,6 +1456,8 @@
 ||rukeyou.com^
 ||runelight.net^
 ||runelite.cc^
+||runeliteplus.net^
+||rup.ksoftir.cc^
 ||rusa-inion24-novst.vercel.app^
 ||ryanborn.net^
 ||ryzhe.com^
@@ -1451,7 +1465,6 @@
 ||saf-oil.ru^
 ||safe-pdf-viewer.lat^
 ||safeifm.com^
-||safeuploadz.com^
 ||sail.autolabsouthgate.com^
 ||sail91.com^
 ||sales.ifree.page^
@@ -1517,9 +1530,11 @@
 ||simpludelicios.md^
 ||situations-clarity-pill-preceding.trycloudflare.com^
 ||sivrex.click^
+||sivritepeinsaat.com^
 ||sixmexicos.com^
 ||sk-comtel.com^
 ||skmac811.com^
+||skolazasisanjepasa.com^
 ||skyblock-addons.com^
 ||skyblock-extras.org^
 ||skyblock-qol.com^
@@ -1568,7 +1583,6 @@
 ||srsorvete.com.br^
 ||srv.conti.pk^
 ||ssh.microc2.lol^
-||stakloram.rs^
 ||stanarcservice.com^
 ||star.zcnet.net^
 ||starcountry.net^
@@ -1576,6 +1590,7 @@
 ||stat.bestcompliance.net^
 ||statementreaderdownload.com^
 ||static.3001.net^
+||static.ilclock.com^
 ||static.topxgun.com^
 ||static.youdm.cn^
 ||static.zongheng.com^
@@ -1586,27 +1601,28 @@
 ||stratos-delta.com^
 ||streammobs.com^
 ||students16.screenconnect.com^
+||studiogioeli.it^
 ||suavasua.vn^
+||sudariocontabilidade.com.br^
 ||sugarfreedcup.co.za^
 ||sugarfreedcupcake.co.za^
+||sultanaexecutive.com^
 ||sumiko.vu^
 ||summitcapitalpatners.info^
 ||summitcapitalpatners.ink^
 ||sumnitasinvestment.com^
 ||sunix-technology.com^
+||superdudesjr.com^
 ||suppliers.lovestoblog.com^
 ||support.clz.kr^
 ||surround-tough-method-zinc.trycloudflare.com^
 ||surun.info^
-||sushiandpoke.pt^
 ||sutterpoint.com^
 ||svirtual.sanviatorperu.edu.pe^
-||svo-poiskrat.vercel.app^
 ||swanrecovery.com^
 ||swatting.wiki^
 ||sweet-snowflake-8a7e.uploadesclintesss.workers.dev^
 ||swervimgbackj.top^
-||swiftfusion.tech^
 ||swiftonyx16.com^
 ||swingerwives.com^
 ||swscripts.com^
@@ -1614,6 +1630,7 @@
 ||synergyconsulting.us^
 ||sysupdate.online^
 ||t3u5y0liyio.map.azionedge.net^
+||tabak.hr^
 ||taizi.fdstat.vip^
 ||talkandtypeapp.com^
 ||tangible-drink.surge.sh^
@@ -1649,7 +1666,6 @@
 ||theholidayroads.com^
 ||themaintechnician.us^
 ||thementordirectory.com^
-||thenewcoffeshop.com^
 ||therapygeorgia.com^
 ||theservice4u.com^
 ||thetamarindleafresidency.com^
@@ -1698,7 +1714,6 @@
 ||tweakz-dream-launcher.lovable.app^
 ||twejamaica.org^
 ||twitch.tj^
-||twu-hwt.org^
 ||tycons.com^
 ||u87yy3f87b23f8293bfg83bgu94.bombamodzik.xyz^
 ||uasputnik.com^
@@ -1743,6 +1758,7 @@
 ||vergabe-zentrale.de^
 ||verification-process.com^
 ||verifyidentify.com^
+||verifyidentrob01.cc^
 ||veryboys.com^
 ||vexonmods.shop^
 ||vibecoders.vip^
@@ -1767,7 +1783,6 @@
 ||waf.proxytunnel.co^
 ||wall.casajuanchos.com^
 ||wandering-hall-d65e.modpages.workers.dev^
-||wantsellonline.com^
 ||wappingerbicornshaps.com^
 ||waveplus.mediabyte.be^
 ||wda.messag.life^
