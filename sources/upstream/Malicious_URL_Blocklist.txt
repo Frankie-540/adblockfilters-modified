@@ -1,9 +1,9 @@
 !
 ! Title: Malicious URL Blocklist (URLHaus)
 ! Description: Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus
-! Version: 1.0.30.11
+! Version: 1.0.30.13
 ! Homepage: https://urlhaus.abuse.ch/
-! Last modified: 2026-11-07T01:11:40.597Z
+! Last modified: 2026-11-08T01:11:43.190Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -17,11 +17,13 @@
 ||10.185.202.64.host.secureserver.net^
 ||123.ywxww.net^
 ||132.red-81-42-249.staticip.rima-tde.net^
+||14-0-204-188.static.pccw-hkt.com^
+||150.co.il^
 ||156.233.235.86.nip.io^
 ||1717.1000uc.com^
 ||172-104-49-49.ip.linodeusercontent.com^
 ||178-83-121-204.cprapid.com^
-||179.248.3.202.ll.sta.mana.pf^
+||178.248.3.202.ll.sta.mana.pf^
 ||198-144-179-82-host.colocrossing.com^
 ||198-macros.com^
 ||198348.gl^
@@ -75,10 +77,11 @@
 ||accessdocu.b-cdn.net^
 ||acd.munber.life^
 ||acms.saleseos.com^
-||acrilicoporto.pt^
 ||acrobat.proposal.name.ng^
 ||activatef.win^
+||activation-gateway.cc^
 ||activegrp.co.za^
+||activelypartnering.com^
 ||acutelyunfailing.cc^
 ||adcentral.com.mx^
 ||adiyamancamkornis.com.tr^
@@ -338,7 +341,6 @@
 ||chantcompass9.com^
 ||chat-server.maverickpreviews.com^
 ||chatgptiamega.ru^
-||cheatclients.com^
 ||check.okx3.io^
 ||checkfivem.com^
 ||checkout.bloamnu.shop^
@@ -373,6 +375,7 @@
 ||cloudeliveryenterprise.com^
 ||cloudenterprise26.com^
 ||cloudflare.gd^
+||cloudflareconfirm.com^
 ||cloudsenterprise26.com^
 ||clownguard.us^
 ||clubdetiroelpicarcho.com^
@@ -387,6 +390,7 @@
 ||configprovider.short.gy^
 ||connectmagazineads.com^
 ||contididit.conti.pk^
+||continentalgroup.net.in^
 ||controliumbt.com^
 ||copiose.org^
 ||coreprotector.org^
@@ -520,7 +524,6 @@
 ||dipre.com.tr^
 ||dir.sonikjp.org^
 ||discordzapretik.sbs^
-||disk.accord1key.cn^
 ||divinex.to^
 ||dklak.cam^
 ||dl.1003b.56a.com^
@@ -593,7 +596,6 @@
 ||download.tg1101.com^
 ||download.vertex-software.digital^
 ||download.youlovemybiba.com^
-||download2.huduntech.com^
 ||downloader.exeexe.workers.dev^
 ||downloads.go-xlr.com^
 ||draft-loop.com^
@@ -642,6 +644,7 @@
 ||emphasis-friday-even-administrator.trycloudflare.com^
 ||empty-violet-63e1.maskify.workers.dev^
 ||emwqkekwqmekwq.work.gd^
+||en.taichuan.com^
 ||entry-code-cdn.codes^
 ||eo3wuo9z334anlh.m.pipedream.net^
 ||epanpano.com^
@@ -700,7 +703,6 @@
 ||ficus.in^
 ||fil.immortales.life^
 ||file.blackint3.com^
-||file.uhsea.com^
 ||fileget.plumbco.co.nz^
 ||filegoat.s3.de.io.cloud.ovh.net^
 ||filequanticore.com^
@@ -719,7 +721,6 @@
 ||firstratezim.com^
 ||fiscalizarais.xyz^
 ||fkjhsdfg478fdm.com^
-||fkoqonr2vgbsw7qu.public.blob.vercel-storage.com^
 ||flexsportpools.com^
 ||flicargo.com^
 ||flint-32.com^
@@ -755,6 +756,7 @@
 ||funrat.co^
 ||fussionmd.com^
 ||fuzerom.cfd^
+||fz.tiansys.cn^
 ||g6.wtf^
 ||gabyagozetim.com^
 ||gaenterprises.in^
@@ -923,6 +925,7 @@
 ||ircftp.net^
 ||isiore.com.co^
 ||itbakersfield.com^
+||itco.pe^
 ||itsmystik.com^
 ||itssprout.com^
 ||iyn4ce9o.casero.store^
@@ -932,6 +935,7 @@
 ||javb.omsules.life^
 ||jawaratekno.com^
 ||jd-forever.com^
+||jdaram.com^
 ||jenniferloeffler.com^
 ||jessespridecharters.com^
 ||johnsonsvalves.cam^
@@ -991,6 +995,7 @@
 ||kryptonv2-v1.lovable.app^
 ||kss-kwt.cam^
 ||kst.omsules.life^
+||ktrced.top^
 ||kuakuawenjian.oss-cn-hangzhou.aliyuncs.com^
 ||kupunasvolpiano.com^
 ||l83.me^
@@ -1036,6 +1041,7 @@
 ||lsmdngnakjbgazxv.com^
 ||lucky-shadow-703a.modpages.workers.dev^
 ||luizmatoso.com.br^
+||lumacrea.com^
 ||luminexclient.com^
 ||luminexclient.net^
 ||luminouspower.com.pk^
@@ -1070,6 +1076,7 @@
 ||maxxlavalink.cyou^
 ||mbcasesores.com^
 ||mc-modhub.vercel.app^
+||mc.heyiwei.net^
 ||media-aviation.run.place^
 ||medicosantiagomarrero.com^
 ||mediocasavolponi.com^
@@ -1081,7 +1088,6 @@
 ||metabolism-effectively-logo-chrome.trycloudflare.com^
 ||meteor-sites-one.vercel.app^
 ||meteoraddons.net^
-||meteorclient.shop^
 ||meteorclient.us^
 ||meteorclientplus.com^
 ||meteorclients.com^
@@ -1153,6 +1159,7 @@
 ||ncxps.com^
 ||nd.tdpqnf.com^
 ||ndigitals.in^
+||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||nebula-client.com^
 ||nebula-client.org^
 ||nebulaclient.co^
@@ -1179,7 +1186,6 @@
 ||nonspamplsgood.vercel.app^
 ||nordertextil.de^
 ||nordmann-automobilgruppe.de^
-||northernvirginiaeyeassociates.com^
 ||nossl.segfault.net^
 ||nota-fical-online.lat^
 ||notbak.com^
@@ -1281,6 +1287,7 @@
 ||phantom-client.com^
 ||photolivebook.pro^
 ||phubotnet.duckdns.org^
+||physioga.net^
 ||pic.li^
 ||pictureurl.com^
 ||pinewoodchristian.screenconnect.com^
@@ -1341,7 +1348,6 @@
 ||promnet.jp^
 ||promotedial.com^
 ||ps-ps.cc^
-||pub-00d54ae289e84e93a3c8640fb2301c5f.r2.dev^
 ||pub-00f9bb8acaec41e6ba904da7d4d8e89a.r2.dev^
 ||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^
 ||pub-0462440f54f44b9fb3474df61e32d6ba.r2.dev^
@@ -1734,7 +1740,6 @@
 ||triapfog.com^
 ||tribot.co.uk^
 ||trickgs-demo.vercel.app^
-||triflackcom.com^
 ||tripfarely.com^
 ||tronzadorasnng.com^
 ||trouserstreak.net^
@@ -1796,6 +1801,7 @@
 ||vaibhavtripathi.in^
 ||vape-client-landing.netlify.app^
 ||vc.tnygbw.com^
+||vcc-data.bond^
 ||vejnqoajk1soxy1x.public.blob.vercel-storage.com^
 ||velmasqwxri.shop^
 ||velvetcanyonline.xyz^
@@ -1894,6 +1900,7 @@
 ||xn--yh4bx88a.com^
 ||xolep1.tos-cn-beijing.volces.com^
 ||xorados.com^
+||xorvanta-mvp.vercel.app^
 ||xsealslogisticsltd.com^
 ||xshop.com.tr^
 ||xunyyymdfv.oss-cn-hongkong.aliyuncs.com^
@@ -1919,7 +1926,6 @@
 ||zenledgerpolicy.com^
 ||zetaval.metcalfphoto.com^
 ||zhigao5191.com^
-||zhikey.com^
 ||zhimaly.com^
 ||zhostz.com^
 ||ziio.oss-ap-southeast-1.aliyuncs.com^
