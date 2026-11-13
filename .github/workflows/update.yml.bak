@@ -1,0 +1,251 @@
+name: Update Filters
+on: 
+  workflow_dispatch:
+  schedule:
+  - cron: 38 3 * * *
+
+concurrency:
+  group: rules-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  TZ: Asia/Shanghai
+  SMARTDNS_PATH: /tmp/smartdns
+  SINGBOX_VERSION: 1.12.12
+  MIHOMO_VERSION: 1.19.16
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  Update_Filters:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3.9.x
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y wget gzip
+          sudo timedatectl set-timezone "$TZ"
+          python -m pip install --upgrade pip
+          pip install -U tld IPy dnspython httpx loguru pytricia
+
+      - name: Update local branch
+        run: |
+          git pull --rebase origin main
+
+      - name: Sync upstream whitelist
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/white.txt" -o white_upstream.txt
+          mkdir -p build
+          python - << 'PY'
+          upstream_domains = set()
+          with open('white_upstream.txt', 'r', encoding='utf-8') as f:
+              for line in f:
+                  line = line.strip()
+                  if line and not line.startswith('#') and not line.startswith('!'):
+                      upstream_domains.add(line)
+
+          custom_domains = set()
+          try:
+              with open('sources/local/white2.txt', 'r', encoding='utf-8') as f:
+                  for line in f:
+                      line = line.strip()
+                      if line and not line.startswith('#') and not line.startswith('!'):
+                          if line not in upstream_domains:
+                              custom_domains.add(line)
+          except FileNotFoundError:
+              pass
+
+          with open('white_final.txt', 'w', encoding='utf-8') as f:
+              with open('white_upstream.txt', 'r', encoding='utf-8') as upstream:
+                  f.write(upstream.read())
+              if custom_domains:
+                  f.write('\n# Custom whitelist entries\n')
+                  for domain in sorted(custom_domains):
+                      f.write(domain + '\n')
+          PY
+          if ! cmp -s white_final.txt "build/white.txt"; then
+            mv white_final.txt "build/white.txt"
+          else
+            rm white_final.txt
+          fi
+          rm -f white_upstream.txt
+
+      - name: Prepare sources and domain backup
+        run: |
+          python scripts/adblock.py --mode prepare --force
+
+      - name: Setup SmartDNS
+        run: |
+          set -e
+          mkdir -p "$SMARTDNS_PATH"
+
+          max_attempts=5
+          sleep_seconds=5
+
+          for attempt in $(seq 1 $max_attempts); do
+            echo "SmartDNS setup attempt ${attempt}/${max_attempts}"
+
+            LATEST_URL="https://github.com/pymumu/smartdns/releases/latest/download/smartdns-x86_64"
+            echo "Downloading SmartDNS from: $LATEST_URL"
+            if wget -q "$LATEST_URL" -O "$SMARTDNS_PATH/smartdns" && [ -s "$SMARTDNS_PATH/smartdns" ]; then
+              chmod +x "$SMARTDNS_PATH/smartdns"
+              cp config/smartdns.conf "$SMARTDNS_PATH/smartdns.conf"
+              nohup "$SMARTDNS_PATH/smartdns" -f -x -c "$SMARTDNS_PATH/smartdns.conf" > /dev/null 2>&1 &
+              echo "SmartDNS started."
+              break
+            else
+              echo "SmartDNS download failed or empty binary."
+            fi
+
+            if [ "$attempt" -eq "$max_attempts" ]; then
+              echo "SmartDNS setup failed after ${max_attempts} attempts."
+              exit 1
+            fi
+
+            echo "Retrying in ${sleep_seconds}s..."
+            sleep "$sleep_seconds"
+            sleep_seconds=$((sleep_seconds * 2))
+          done
+
+      - name: Wait for SmartDNS
+        run: |
+          python - <<'PY'
+          import time
+          import dns.message
+          import dns.query
+          import dns.rcode
+
+          for i in range(60):
+              try:
+                  q = dns.message.make_query("example.com", "A")
+                  r = dns.query.udp(q, "127.0.0.1", port=5053, timeout=2)
+                  rcode = r.rcode()
+                  rcode_text = dns.rcode.to_text(rcode)
+                  if rcode == dns.rcode.NOERROR:
+                      print("SmartDNS ready: rcode=%s" % rcode_text)
+                      break
+                  print("SmartDNS not ready: rcode=%s" % rcode_text)
+                  time.sleep(1)
+              except Exception as e:
+                  print("SmartDNS not ready: exception=%s" % e)
+                  time.sleep(1)
+          else:
+              log_path = "/tmp/smartdns/smartdns.log"
+              try:
+                  with open(log_path, "r", encoding="utf-8", errors="ignore") as f:
+                      lines = f.readlines()[-200:]
+                  print("SmartDNS log tail:")
+                  print("".join(lines))
+              except Exception as e:
+                  print("SmartDNS log unavailable: %s" % e)
+              raise SystemExit("SmartDNS not ready")
+          PY
+
+      - name: Generate blacklist and China list
+        run: |
+          python scripts/blacklist.py
+
+      - name: Generate final rules
+        id: update
+        run: |
+          python scripts/adblock.py --mode generate
+          rm -rf scripts/__pycache__
+          rm -rf scripts/app/__pycache__
+          echo "message=chore(rules): update filters and blacklist [$(TZ='Asia/Shanghai' date +'%F %T%:z')]" >> $GITHUB_OUTPUT
+
+      - name: Validate rule counts
+        run: |
+          python scripts/validate_rule_counts.py
+
+      - name: Compile Sing-Box filters
+        run: |
+          wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
+          tar -zxvf sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
+          chmod +x sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box
+          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output rules/adblocksingbox.srs     rules/adblocksingbox.json
+          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output rules/adblocksingboxlite.srs rules/adblocksingboxlite.json
+          rm -rf sing-box*
+      
+      - name: Compile mihomo filters
+        run: |
+          wget https://github.com/MetaCubeX/mihomo/releases/download/v${{env.MIHOMO_VERSION}}/mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
+          gzip -d mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
+          chmod +x mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}
+          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml rules/adblockmihomo.yaml     rules/adblockmihomo.mrs
+          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml rules/adblockmihomolite.yaml rules/adblockmihomolite.mrs
+          rm -rf mihomo*
+      
+      - name: Commit and push changes
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "${{ steps.update.outputs.message }}"
+
+          max_attempts=3
+          for attempt in $(seq 1 $max_attempts); do
+            echo "Push attempt ${attempt}/${max_attempts}"
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Pushed successfully."
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+
+          echo "Push failed after ${max_attempts} attempts."
+          exit 1
+  
+  Refresh_CDN:
+    needs: [ Update_Filters ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+      
+      - name: Setup Python 3.9.x
+        uses: actions/setup-python@main
+        with:
+          python-version: '3.9.x'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U tld IPy dnspython httpx loguru
+      
+      - name: Refsh CDN Cache
+        run: |
+          python scripts/refreshcdn.py
+
+  Delete_Workflow_Runs:
+    needs: [ Refresh_CDN ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 5
