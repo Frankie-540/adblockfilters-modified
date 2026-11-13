@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   Update_Filters:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout Repo
@@ -28,7 +28,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Python 3.9.x
+      - name: Setup Python 3.9
         uses: actions/setup-python@v6
         with:
           python-version: '3.9'
@@ -219,29 +219,29 @@ jobs:
   
   Refresh_CDN:
     needs: [ Update_Filters ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v6
       
-      - name: Setup Python 3.9.x
-        uses: actions/setup-python@main
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.9.x'
+          python-version: '3.9'
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -U tld IPy dnspython httpx loguru
       
-      - name: Refsh CDN Cache
+      - name: Refresh CDN Cache
         run: |
           python scripts/refreshcdn.py
 
   Delete_Workflow_Runs:
     needs: [ Refresh_CDN ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Delete workflow runs
