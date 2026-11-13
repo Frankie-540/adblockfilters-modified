@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Badware Hoster Blocklist
 ! Description: Blocks known free hosters that also host badware via user content to prevent the use of these hosters for malicious purposes.
-! Version: 1.0.21.46
+! Version: 1.0.21.50
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-11-10T00:29:03.543Z
+! Last modified: 2026-11-13T09:13:23.772Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -12,7 +12,6 @@
 ||123freehost.co.uk^
 ||24.co.at^
 ||all.co.uk^
-||dothome.co.kr^
 ||surfblocked.co.cc^
 ||thamboli.co.za^
 ||cableonline.com.mx^
@@ -429,7 +428,6 @@
 ||fastshare.org^
 ||fat-fly.com^
 ||ferreracademy.com^
-||file.io^
 ||fileave.com^
 ||filebin.net^
 ||filecache.de^
@@ -603,7 +601,6 @@
 ||ja.cat^
 ||janhost.com^
 ||jcmemoryscan.com^
-||jimdofree.com^
 ||jixx.de^
 ||jixx.net^
 ||job.ec^
@@ -639,6 +636,7 @@
 ||lhosting.info^
 ||lhr.life^
 ||liebe.lc^
+||liftmyresume.com^
 ||lihi1.com^
 ||lihi3.cc^
 ||likesyou.org^
@@ -710,7 +708,6 @@
 ||myblogvoice.com^
 ||mybluehost.me^
 ||mybluehostin.me^
-||myclickfunnels.com^
 ||mycpanel.rs^
 ||mydiscussion.net^
 ||myeweb.net^
@@ -719,7 +716,6 @@
 ||myftpupload.com^
 ||myfunnelish.com^
 ||mylinkinb.io^
-||myportfolio.com^
 ||mypressonline.com^
 ||mystrikingly.com^
 ||mytempdir.com^
@@ -742,6 +738,7 @@
 ||nl.kg^
 ||noads.biz^
 ||nofeeshost.com^
+||nokojp.shop^
 ||novamov.com^
 ||now.lc^
 ||npx.de^
@@ -772,6 +769,7 @@
 ||only4u.eu^
 ||onmbl.com^
 ||opent2.com^
+||opisial.com^
 ||orgfree.com^
 ||orgsites.com^
 ||own-free-website.com^
@@ -797,9 +795,9 @@
 ||pl.de^
 ||pl.gp^
 ||planet.tl^
+||plasmic.run^
 ||plu.sh^
 ||portal.lc^
-||pory.app^
 ||pp.ua^
 ||preview-domain.com^
 ||primetap.com^
@@ -894,10 +892,10 @@
 ||smsu.io^
 ||social-networking.me^
 ||socialsmp.com^
-||softr.app^
 ||solidwebhost.com^
 ||somee.com^
 ||space.lc^
+||spaceplay.top^
 ||sport-pro.de^
 ||sportsontheweb.net^
 ||spruz.com^
