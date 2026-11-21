@@ -30,13 +30,11 @@
 ||afiletoget.click^
 ||air-up-turkiye.com^
 ||air-upfrance.com^
-||aircgd.shop^
 ||airteltower.com^
 ||airtoff.com^
 ||airup-romania.com^
 ||airupsrbija.com^
 ||aizipai.cn^
-||aldi-life.vip^
 ||alindflepkaty14.pages.dev^
 ||aliyaoberbrunnergreg21.myshopify.com^
 ||allcars.cn^
@@ -126,7 +124,6 @@
 ||by-emmamuller.de^
 ||c0nt4ct-me.pages.dev^
 ||campingsurfshop.com^
-||canadapost-service.info^
 ||candlesbymadison.com^
 ||canjaume.com^
 ||caraci.it^
@@ -148,6 +145,7 @@
 ||ckkebt.shop^
 ||clemoa.com^
 ||cluckergifts.ecwid.com^
+||cma88.vip^
 ||cmoboy.com^
 ||cognatesyringe.com^
 ||coinaps.com^
@@ -188,7 +186,6 @@
 ||devifoodgrains.com^
 ||dezpez.com^
 ||distrochooser.snehit.dev^
-||diytsi.shop^
 ||dkfodboldstore.com^
 ||dleggere.com^
 ||doh-gov.ph^
@@ -212,13 +209,13 @@
 ||e-visaindiaonline.com^
 ||earnpets.com^
 ||easypayment.me^
-||easyshopper.org^
 ||ecomicrolab.com^
 ||ecs-online.ffm.to^
 ||edwardjhutley107375938786edwardjrhutley70205433153583usps.com^
 ||emberio.com^
 ||enchantestore.myshopify.com^
 ||envisiongear.com^
+||equiwarmpro.co^
 ||eset.co.il^
 ||esl-gaming.com^
 ||estiloserena.com.br^
@@ -251,6 +248,7 @@
 ||faze1.com^
 ||faze10.com^
 ||faze2.com^
+||faze3.com^
 ||faze4.com^
 ||faze47.com^
 ||faze5.com^
@@ -292,7 +290,6 @@
 ||fumekart.com^
 ||fundanemt.org^
 ||furnishmyhome.ca^
-||furoshop.com^
 ||furykms.com^
 ||fveco.com^
 ||gamedrive.org^
@@ -429,7 +426,6 @@
 ||kuyhaa.cc^
 ||lasercutjewelry.net^
 ||lds.xyz^
-||ledgerrlivess.org^
 ||lemstore.com^
 ||lericettedifrancy74.com^
 ||letteringift.com^
@@ -452,6 +448,7 @@
 ||luckyhomie.com^
 ||lucysstyle.com^
 ||luxsgear.com^
+||m.coinexeu.vip^
 ||maebl.com^
 ||magnite.shop^
 ||mail-cytanet.pages.dev^
@@ -482,7 +479,6 @@
 ||multifilmy.pl^
 ||muskai.net^
 ||muskusa.com^
-||muthaafoundation.org^
 ||mybestautologin567.com^
 ||myblogshop.top^
 ||myfunfarm.com^
@@ -504,7 +500,6 @@
 ||navi21.com^
 ||navi21.ru^
 ||navi22.com^
-||navi22.ru^
 ||navi23.com^
 ||navi23.ru^
 ||navi24.com^
@@ -546,7 +541,6 @@
 ||nayatowerinstallation.in.net^
 ||nbdiscount.com^
 ||neozor.com^
-||netsugar.shop^
 ||nevaon.com^
 ||new.gdtot.me^
 ||new.piratedrive.com^
@@ -593,7 +587,6 @@
 ||officialkmspico.com^
 ||officialyeti.com^
 ||oflike.com^
-||ojlkimed.vip^
 ||okdebrid.com^
 ||oldcube.com^
 ||olive121407.studio.site^
@@ -628,7 +621,7 @@
 ||phgliders.com^
 ||philsshorthairorientalkittens.com^
 ||phirussacmush.net^
-||phototan2025.com^
+||photo-reaktivieren.org^
 ||pinjamanrupiah.xyz^
 ||pinjamteman.top^
 ||pinjamuang.top^
@@ -642,7 +635,6 @@
 ||post-nachsenden.de^
 ||prawdziwefilmy.pl^
 ||premiumqualityblanket.com^
-||presale-friday.info^
 ||primeleech.com^
 ||promo-offer.com^
 ||promotion40-form.com^
@@ -675,9 +667,7 @@
 ||rustdesk.pl^
 ||rustdesk.secure-box.de^
 ||sakuradate.com^
-||salimusic.com^
 ||saveeeee.myshopify.com^
-||sberbank.avito.ozon.id19845672.info^
 ||seagulltee.com^
 ||seans24.com.pl^
 ||seasonsofficial.com^
@@ -704,6 +694,7 @@
 ||singleflirt.com^
 ||skincheap.com^
 ||skinszone.net^
+||skipped.vip^
 ||skyfollowerbridge.com^
 ||sligen.com^
 ||slimsyrups.ca^
@@ -763,7 +754,6 @@
 ||tartannewzealand.myshopify.com^
 ||tatatowers.com^
 ||tbao684tryo.com^
-||tdgrop168.vip^
 ||teezill.com^
 ||telegramweb.vercel.app^
 ||telemarktalk.com^
@@ -783,7 +773,6 @@
 ||tiranaaquapark-eg.com^
 ||tlstoreonline.com^
 ||toko999.net^
-||toko999.shop^
 ||tomadamsenergy.com^
 ||torrenty-pl.cc^
 ||touristvisaonline.com^
@@ -879,9 +868,7 @@
 ||watchmark.shop^
 ||wavetshirt.com^
 ||wazofurniture.com^
-||wdamp.info^
 ||weathly.com^
-||webmail.processing-transaction.info^
 ||whbinder.com^
 ||wikeb.com^
 ||wintexfashions.com^
@@ -932,6 +919,7 @@
 ||zerknij-tv.pl^
 ||zerorolex.com^
 ||zhongda.info^
+||zlibrary.to^
 ||zobaczfilm.com^
 ||zolrqw.palatlaldate.com^
 ! Optimized Expressions, thx DandelionSprout

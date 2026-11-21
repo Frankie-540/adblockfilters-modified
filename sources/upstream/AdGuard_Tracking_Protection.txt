@@ -877,7 +877,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||api.eventbus.me^
 ||rumt-sg.com^
 ||gm.mmstat.com^
-||yazio-analytics.com^
+||event-ingestion.yazio-analytics.com^
 ||hightouch-events.com^
 ||rtbuniverse.com^
 ||imp_track.zmaticoo.com^
@@ -111703,6 +111703,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||a.famorigins.com^
 ||a.gigl.ist^
 ||a.meloja.com.br^
+||a.menards.com^
 ||a.setup.moe^
 ||a3.mtindex.top^
 ||anal.ytics.de^
@@ -114919,7 +114920,6 @@ prd.api.bleacherreport.com^
 ||fxgate.baidu.com^
 ||p.controld.com^
 ||collector.bsg.brave.com^
-||sy.ameba.jp^
 ||tracker.uira.live^
 ||col.surfside.io^
 ||tsn.dmcmedia.co.kr^
@@ -427532,6 +427532,13 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||seznam.cz/*/hit|
+||seznam.cz/*/imp?k=
+||fls-eu.amazon.de/*batch/*uedata*Gateway
+||ev.chitchat.tv/e/
+||ev.chitchat.tv/i/*/e/
+||kasemato.net/wp-content/themes/kasemato/assets/access-analytics.js
+||kasemato.net/wp-content/themes/kasemato/assets/frame-stats.js
 ||strike.fox.com/static/fnc/video/Prebidbidder.js
 ||strike.fox.com/static/fnc/video/Amazonbidder.js
 ||static.foxnews.com/static/isa/app/lib/VisitorAPI.orig.js
@@ -434980,6 +434987,8 @@ mcp.directory#%#//scriptlet('remove-cookie', 'dotcom_user')
 ||amazon.com^$cookie=aws-target-session-id
 ||amazon.com^$cookie=aws-target-visitor-id
 ||amazon.com^$cookie=aws-vid
+! amazon.*
+||amazon.*^$cookie=csm-hit
 ! yellowpages.com
 ||yellowpages.com^$cookie=vrid
 ! spooncast.net
@@ -437320,6 +437329,9 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/247621
+kick.com#%#//scriptlet('prevent-fetch', 'litix.io')
+kick.com#%#//scriptlet('prevent-setTimeout', 'startBeaconSending')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/247468
 ||googletagmanager.com/gtag/js$redirect=noopjs,domain=propertyguru.com.my
 ! https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/321
@@ -442845,6 +442857,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||coldcrucible.com^
 ||coloradoserves.com^
 ||colorandnoise.com^
+||colorfilter.net^
 ||colorfulneon.com^
 ||colorfulpet.com^
 ||coloroptimizer.com^
@@ -443312,6 +443325,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||forgetfulsnail.com^
 ||fortbeach.com^
 ||fortunatemark.com^
+||fortyninemaps.com^
 ||forwardslashetc.com^
 ||fossilzero.com^
 ||fourlevelsgame.com^
@@ -443524,6 +443538,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||hospitablehall.com^
 ||hospitablehat.com^
 ||hostchutney.com^
+||housewheels.com^
 ||howdoesthislook.com^
 ||hubcapcafe.net^
 ||humbleroots.net^
@@ -443541,6 +443556,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||hystericalcloth.com^
 ||hystericalfinger.com^
 ||icywinter.com^
+||ideamornings.com^
 ||idlecollect.com^
 ||idsmodules.com^
 ||illinvention.com^
@@ -443680,6 +443696,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||lessonsnetwork.com^
 ||libraryfacts.com^
 ||libraryvalue.com^
+||lidsmarket.com^
 ||lifecoverdirect.com^
 ||liftedknowledge.com^
 ||lightenafterthought.com^
@@ -443773,7 +443790,9 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||marriedmailbox.com^
 ||marriedvalue.com^
 ||marsnextdoor.com^
+||mascguys.com^
 ||maskedadmin.com^
+||masondown.com^
 ||masseurexpress.com^
 ||massivemark.com^
 ||masterenter.com^
@@ -443921,6 +443940,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||nimbleplot.com^
 ||nimbuswatersystem.com^
 ||ninjatravels.com^
+||nitrojiveband.com^
 ||noblecables.com^
 ||noblefellow.com^
 ||nodenotify.com^
@@ -443992,6 +444012,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||orangebirdie.com^
 ||orchidgenius.com^
 ||orderjumper.com^
+||ordinalzero.com^
 ||orgbackups.com^
 ||orientedargument.com^
 ||originblocks.com^
@@ -444226,6 +444247,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||rangeplayground.com^
 ||rangergustav.com^
 ||rankaddict.com^
+||rapidscraper.com^
 ||rarelyfans.com^
 ||raresummer.com^
 ||razzweb.com^
@@ -445141,6 +445163,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||yellowscissors.com^
 ||yetiminis.com^
 ||yieldingwoman.com^
+||youanonymous.com^
 ||youcandrawanything.com^
 ||yourgiftedbaby.com^
 ||yourlifedream.com^
