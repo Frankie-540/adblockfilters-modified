@@ -1,9 +1,9 @@
 !
 ! Title: Malicious URL Blocklist (URLHaus)
 ! Description: Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus
-! Version: 1.0.30.40
+! Version: 1.0.30.42
 ! Homepage: https://urlhaus.abuse.ch/
-! Last modified: 2026-11-21T01:12:20.573Z
+! Last modified: 2026-11-22T01:11:56.366Z
 !
 ! Compiled by @adguard/hostlist-compiler v3.0.0
 !
@@ -17,12 +17,12 @@
 ||10.185.202.64.host.secureserver.net^
 ||123.ywxww.net^
 ||132.red-81-42-249.staticip.rima-tde.net^
-||14-0-204-188.static.pccw-hkt.com^
 ||150.co.il^
 ||156.233.235.86.nip.io^
 ||167-148-195-171.sslip.io^
 ||1717.1000uc.com^
 ||178-83-121-204.cprapid.com^
+||18tllktok.xyz^
 ||198-144-179-82-host.colocrossing.com^
 ||198-macros.com^
 ||198348.gl^
@@ -75,6 +75,7 @@
 ||aafesorder.com^
 ||aass111.tos-cn-beijing.volces.com^
 ||aass1122.tos-cn-beijing.volces.com^
+||aasss111222222.tos-cn-beijing.volces.com^
 ||aawwf.hkg.bcebos.com^
 ||abangpoteh.com^
 ||abc.highpnk.life^
@@ -329,6 +330,7 @@
 ||caterprosoftware.com^
 ||ccoffice.site^
 ||ccuffn.icu^
+||cda.fixiow.icu^
 ||cda.omsules.life^
 ||cdaonline.com.ar^
 ||cdd.omsules.life^
@@ -341,13 +343,13 @@
 ||cdn-2s.hypstock.info^
 ||cdn-4f.hypstock.info^
 ||cdn.876553.xyz^
-||cdn.file6.goodid.com^
 ||cdn.gomlab.com^
 ||cdn.hypstock.info^
 ||cdn.monther.life^
 ||cdn.wovplaying.help^
 ||cdn.xiaoduoai.com^
 ||cdn044us.xyz^
+||cdn1.fixiow.icu^
 ||cdn1.hyperfxs.icu^
 ||cdn4324.com^
 ||cdp.wovplaying.help^
@@ -569,7 +571,7 @@
 ||divinex.to^
 ||dklak.cam^
 ||dl.1003b.56a.com^
-||dl.2345.com^
+||dl.atlas101.us.kg^
 ||dl.downloadonly.me^
 ||dl.dzqzd.com^
 ||dl.natgo.cn^
@@ -577,7 +579,6 @@
 ||dl1.claudflare-gateway.net^
 ||dlied6.bytes.tcdnos.com^
 ||dlied6.yz.tcdnos.com^
-||dmoneii.com^
 ||dnf.gampangjepe.org^
 ||dnswwt.club^
 ||do.opinionvip.club^
@@ -641,7 +642,6 @@
 ||download.tg1101.com^
 ||download.vertex-software.digital^
 ||download.youlovemybiba.com^
-||download2.huduntech.com^
 ||downloader.exeexe.workers.dev^
 ||downloads.go-xlr.com^
 ||downloads.goxlr.studio^
@@ -684,6 +684,7 @@
 ||easybillingsolutions.xyz^
 ||easyfiles.cc^
 ||eatcullt.com^
+||efhiwogvjd.com^
 ||efn.lol^
 ||einzigartigfrei.de^
 ||ela-bo.com^
@@ -750,9 +751,9 @@
 ||fcitantibot.pro^
 ||fcmelle.de^
 ||fd.v2downf.shop^
+||fdstat.vip^
 ||fe29jf323.kesug.com^
 ||featherswallet.net^
-||featherwallet.com^
 ||featuresfoundation.com^
 ||feed-delta.com^
 ||feedweave14.com^
@@ -912,6 +913,7 @@
 ||gtm.aryzap.com^
 ||guanfangxiazai-oss-cn-singapore-aliyuncs.top^
 ||h-hss-za.co^
+||hadescheats.cc^
 ||hagosuro.lc^
 ||haiiiihello.top^
 ||hanasrmt.ca^
@@ -942,11 +944,11 @@
 ||hilbetadres.com^
 ||hindustancargologistic.com^
 ||hip-hop-comms.com^
+||hitman-pro.ru^
 ||hitstation.nl^
 ||hjha.ao^
 ||hll912-1484535448.cos.ap-hongkong.myqcloud.com^
 ||hnjgdl.geps.glodon.com^
-||hobobot.net^
 ||horion-static.pages.dev^
 ||horizonlauncher.net^
 ||hospital-prod-bucket.s3.amazonaws.com^
@@ -1036,6 +1038,7 @@
 ||jscdncloude.beer^
 ||jswen.com^
 ||jubex.eu^
+||judism.com^
 ||jumalputty.com^
 ||k3p8wz1n.bvcbx.store^
 ||kabarberita.eu.cc^
@@ -1165,7 +1168,6 @@
 ||mailservicesgroup.org^
 ||mailto-carmen-connected-paying.trycloudflare.com^
 ||makemewin.club^
-||malupieng.com.br^
 ||mandarin.net.au^
 ||manita.lol^
 ||manmenduster.online^
@@ -1202,7 +1204,6 @@
 ||metricgw.com^
 ||metrics-relay.net^
 ||metrics.agoxpathbet.one^
-||metrics.gocloudmaps.com^
 ||mfschools.screenconnect.com^
 ||mhftee.my.id^
 ||mhmehadi.top^
@@ -1212,8 +1213,10 @@
 ||miip.live^
 ||mindrix.top^
 ||minecraft-cheats.com^
+||minecraft-vip.top^
 ||minefox.lol^
 ||miner.pages.dev^
+||mininews.kpzip.com^
 ||minnarasanen.com^
 ||minpop.com^
 ||mipagina.cl^
@@ -1326,7 +1329,6 @@
 ||ofice365.github.io^
 ||ohhhhhmoney.com^
 ||ohwcadvisor.com^
-||oim.doganltd.com.tr^
 ||oj44472.com^
 ||ojang.pe.kr^
 ||ok3.hypstock.info^
@@ -1550,6 +1552,7 @@
 ||puschl.langhaar-schaeferhunde.com^
 ||pvsa.gxfugy.cn^
 ||q7k2m9xb.us-theeloncode.com^
+||qadamcash.top^
 ||qbd.fillall.life^
 ||qdzip-1476850762.cos.ap-singapore.myqcloud.com^
 ||qiniuyunxz.yxflzs.com^
@@ -1592,6 +1595,7 @@
 ||reinigung-kosanke.de^
 ||reiventarseuconhecimento.com^
 ||relay.lecoindudiabetique.com^
+||release-activation.cc^
 ||remote-helpdesk.com^
 ||render-6.com^
 ||repositoryserver.dpdns.org^
@@ -1600,13 +1604,13 @@
 ||ret.cloudrack.in.net^
 ||reutilizemais.co.mz^
 ||rewardgoldshop.com^
-||rheddh.com^
 ||riderspin.com^
 ||rigmod.net^
 ||rmm.smartscreen.lifestyle^
 ||robertrowe.com^
 ||robertsonelectrlcal.screenconnect.com^
 ||robinhood.media^
+||roblox-executr.com^
 ||roblox-expl.info^
 ||robloxscript.top^
 ||robloxscript1.top^
@@ -1636,6 +1640,7 @@
 ||ryzhe.com^
 ||s1w21.comen.store^
 ||s4.ncreuh.icu^
+||s53.eu^
 ||s6k.hypstock.info^
 ||s7g.hypstock.info^
 ||saf-oil.ru^
@@ -1708,6 +1713,7 @@
 ||silver-hubdachwohnwagen.de^
 ||simplecheck.online^
 ||simpludelicios.md^
+||site.hfgjjkrewjk.com^
 ||site.jiancai008.com^
 ||site.vietnam852.com^
 ||situation-significance-replace-coral.trycloudflare.com^
@@ -1783,6 +1789,7 @@
 ||static.topxgun.com^
 ||static.youdm.cn^
 ||statist.site^
+||stb.hypstok.info^
 ||stdown.dinju.com^
 ||steelstanleystaystrong.top^
 ||stellaspicy.org^
@@ -1793,6 +1800,7 @@
 ||stkl6f.hyperfxs.icu^
 ||stkp1.hyperfxs.icu^
 ||stkp2.hyperfxs.icu^
+||stnon1.hypstok.info^
 ||storage-c15.hyperfx.info^
 ||storage-f13.hyperfx.info^
 ||storage10.hyperfx.info^
@@ -1823,7 +1831,6 @@
 ||svirtual.sanviatorperu.edu.pe^
 ||swatting.wiki^
 ||swervimgbackj.top^
-||swiftfusion.tech^
 ||swiftonyx16.com^
 ||swingerwives.com^
 ||sx.mcgrorys.top^
@@ -1893,6 +1900,7 @@
 ||topkitss.icu^
 ||torurr.click^
 ||totemstudios.xyz^
+||tpp.om-stock.com^
 ||tr.zhzy999.net^
 ||trabzonmegareklamllc.shop^
 ||transparenciacanaa.com.br^
@@ -1913,6 +1921,7 @@
 ||tryclix.com^
 ||tttkkkssww.com^
 ||tuiskr.com^
+||tunnel-activation.cc^
 ||tutpaste.com^
 ||tvel.mcgrorys.top^
 ||tw.fixlow.shop^
@@ -1986,6 +1995,8 @@
 ||vfils.shop^
 ||victorregenerativemedicinecenters.com^
 ||videdtp-rus.vercel.app^
+||videoavarii17-sbs.pages.dev^
+||videoavarii17.sbs^
 ||videosnw-ru.vercel.app^
 ||viewgit.sbs^
 ||vinacomelectric.top^
@@ -2025,6 +2036,7 @@
 ||whisone.cc^
 ||white-band-a6fb.to-o-ls-mee.workers.dev^
 ||white-mode-a35b.modpages.workers.dev^
+||white-vpn.top^
 ||wicreset.online^
 ||widexenmexico.com.mx^
 ||wielixclient.com^
@@ -2052,13 +2064,13 @@
 ||wordtax.ink^
 ||wpoler.help^
 ||wppluginindex.com^
+||wqrn59d.com^
 ||wuming0.tech^
 ||wurstclient.org^
 ||ww.menara5d.net^
 ||wwalucircle.com^
 ||wwce.hellowortnm.cn^
 ||www-connect-secure-wellcfargo.sekolahkejarpaket.com^
-||www2.0zz0.com^
 ||www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com^
 ||www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com^
 ||wwwiiisss.oss-ap-northeast-1.aliyuncs.com^
