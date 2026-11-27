@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: R7aIAnanKlC4wqBmpUFARA
-! Version: 202611260452
+! Checksum: MF9ChnjUgG18cxVeRjP0eQ
+! Version: 202611270452
 ! Title: EasyPrivacy
-! Last modified: 26 Nov 2026 04:52 UTC
+! Last modified: 27 Nov 2026 04:52 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7960,6 +7960,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ad.aloodo.com^
 ||ad.mail.ru/*.gif?rnd=$third-party
 ||adbr.io/log?
+||adcanvas.com^$third-party
 ||addtoany.com/menu/transparent.gif
 ||ade.googlesyndication.com^
 ||adfox.yandex.ru^
@@ -10939,6 +10940,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||trygravity.ai/ack?
 ||ts.tradetracker.net^
 ||turnto.com/event
+||tvid.in/api/track
 ||tvpage.com/tvpa.min.js
 ||tvpage.com^*/__tvpa.gif?
 ||twitter.com/jot.html
@@ -15330,6 +15332,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ss.partner.life360.com/bwcrqwpxgng.js
 ||svc2.sc.com^
 ||taboola.com/gtm/
+||techbarrista.com/api/event
 ||theverge.com/metrics/
 ||tips.delt.io^
 ||tm-eps.neutrino.nu^
